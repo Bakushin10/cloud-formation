@@ -9,3 +9,5 @@ cloud formation for my project
     	--capabilities CAPABILITY_NAMED_IAM \
     	--parameters 'ParameterKey=SubnetID,ParameterValue=subnet-c8635893'
 
+    
+    aws cloudformation delete-stack --stack-name fnol-ecs-deployment
