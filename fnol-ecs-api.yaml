@@ -137,6 +137,16 @@ Resources:
               awslogs-region: !Ref AWS::Region
               awslogs-group: !Ref LogGroup
               awslogs-stream-prefix: ecs
+          Environment:
+            - Name: R2DBC_HOST
+              Value: localhost
+            - Name: R2DBC_DB
+              Value: POSTGRES_DB
+            - Name: R2DBC_USERNAME
+              Value: shin
+            - Name: R2DBC_PASSWORD
+              Value: password
+
               
     # Properties:
     #   Family: fnol-tasks-fargate
