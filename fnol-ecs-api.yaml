@@ -146,6 +146,10 @@ Resources:
               Value: shin
             - Name: R2DBC_PASSWORD
               Value: password
+            - Name: CONTEXT_PATH
+              Value: /api/v1
+            - Name: SPRING_PROFILE
+              Value: default
 
               
     # Properties:
