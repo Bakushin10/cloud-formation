@@ -40,6 +40,10 @@ Parameters:
     Type: String
     Default: "api-service"
 
+  # ECSTaskEnvironmentVariables:
+  #   Type: keyValuePair
+  #   Default: "api-service"
+
 Resources:
 # ------------------------------------------------------------#
 #  Target Group
@@ -75,7 +79,7 @@ Resources:
       ClusterName: !Sub "${ProjectName}-${ECSClusterName}"
 
 # ------------------------------------------------------------#
-#  ECS LogGroup
+#  ECS LogGroup for cloudwatch
 # ------------------------------------------------------------#
   LogGroup:
     Type: AWS::Logs::LogGroup
