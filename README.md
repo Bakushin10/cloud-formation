@@ -14,3 +14,10 @@ create stack
 Delete stack
 
     aws cloudformation delete-stack --stack-name fnol-ecs-deployment
+
+
+app url
+[DNS name]/api/v1/health
+
+DNS name can be found under EC2 load balancer
+ecs-alb2-xxxxxxxx.ap-northeast-1.elb.amazonaws.com
